@@ -9,14 +9,22 @@
   <body>
     여긴1231 const
 
+    <input
+      id="input"
+      type="file"
+      onclick="showAndroidToast('Hello Android!')"
+    />
+
     <script type="text/javascript">
+      const input = document.getElementById("input");
+
+      input.addEventListener("click", showAndroidToast("Hello Android!"));
+
       function showAndroidToast(toast) {
         console.log("들어옵니다!!", toast);
         Android.showToast(toast);
       }
     </script>
-
-    <input type="file" onChange="showAndroidToast('Hello Android!')" />
 
     <input type="file" />
   </body>
