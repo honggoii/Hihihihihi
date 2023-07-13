@@ -8,12 +8,13 @@
 
     <script type="text/javascript">
       function showAndroidToast(toast) {
-          Android.showToast(toast);
+        console.log("들어옵니다!!", toast);
+        Android.showToast(toast);
       }
-  </script>
+    </script>
   </head>
   <body>
     여긴1231 const
-    <input type="file" onchange="showAndroidToast('Hello Android!')"/>
+    <input type="file" onchange="showAndroidToast('Hello Android!')" />
   </body>
 </html>
